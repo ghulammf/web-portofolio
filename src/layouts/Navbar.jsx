@@ -28,7 +28,7 @@ function Navbar() {
               { id: "skills", label: "Keahlian" },
               { id: "projects", label: "Proyek" },
               { id: "experience", label: "Pengalaman" },
-              { id: "blog", label: "Blog" },
+              // { id: "blog", label: "Blog" },
               { id: "contact", label: "Kontak" },
             ].map((item) => (
               <span
