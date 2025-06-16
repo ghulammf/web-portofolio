@@ -16,7 +16,7 @@ function About() {
             {/* <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Cerita Singkat
             </h3> */}
-            <p className="text-gray-600 mb-6 leading-relaxed">
+            <p className="text-gray-600 mb-6 leading-relaxed md:text-lg lg:text-xl">
               I am a final-year Computer Engineering student at Politeknik
               Elektronika Negeri Surabaya (PENS), where I have developed a
               strong foundation in software development and web technologies.
@@ -24,17 +24,16 @@ function About() {
               experience through internships and freelance projects that have
               shaped my professional skills.
             </p>
-            <p className="text-gray-600 mb-6 leading-relaxed">
+            <p className="text-gray-600 mb-6 leading-relaxed md:text-lg lg:text-xl">
               My technical expertise centers around modern web development
               technologies, including ReactJS for frontend development, Node.js
               and Express.js for backend solutions, and MySQL for database
               management. I'm passionate about creating full-stack applications
               that solve real-world problems and improve user experiences.
             </p>
-            <div className="bg-blue-50 p-6 rounded-lg">
-              <p className="text-blue-800 font-medium">
-                "Kode terbaik adalah kode yang mudah dipahami oleh developer
-                lain, termasuk diri sendiri 6 bulan kemudian." ☕
+            <div className="card">
+              <p className="text-blue-800 font-medium md:text-lg font-mono">
+                "No coding, no flexing" ☕
               </p>
             </div>
           </div>
@@ -64,12 +63,13 @@ function About() {
             </div> */}
 
             <div className="mt-8">
-              <h4 className="font-bold text-gray-900 mb-4">Minat Khusus:</h4>
-              <div className="flex flex-wrap gap-3">
+              <h4 className="font-bold text-gray-900 mb-4">Interested</h4>
+              <div className="flex justify-center flex-wrap gap-3">
                 {[
-                  "Open Source",
-                  "AI/ML",
+                  //"Open Source",
+                  //"AI/ML",
                   "Web Performance",
+                  "Cyber Security",
                   "UI/UX Design",
                   "DevOps",
                 ].map((interest) => (

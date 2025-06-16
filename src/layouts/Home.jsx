@@ -38,7 +38,7 @@ function Home() {
             <h2 className="text-xl lg:text-2xl text-gray-600 mb-6">
               Web Developer Enthusiast
             </h2>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed md:text-lg lg:text-xl">
               Saya adalah seorang developer yang passionate dalam menciptakan
               solusi digital inovatif. Dengan pengalaman 1 tahun, saya fokus
               pada pengembangan aplikasi web user-friendly dan scalable.
@@ -60,7 +60,7 @@ function Home() {
               Lihat Proyek Saya
             </span>
           </div>
-          <div className="lg:w-1/2 flex justify-center">
+          {/* <div className="lg:w-1/2 flex justify-center">
             <div className="relative">
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-blue-400 to-purple-600 flex items-center justify-center">
                 <img
@@ -70,6 +70,9 @@ function Home() {
                 />
               </div>
             </div>
+          </div> */}
+          <div className="spinner">
+            <div className="spinner1"></div>
           </div>
         </div>
       </div>
