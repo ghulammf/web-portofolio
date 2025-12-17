@@ -1,12 +1,4 @@
-import {
-  Github,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Send,
-  Twitter,
-} from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 
 function Contact() {
@@ -27,80 +19,83 @@ function Contact() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Kontak
+            Contact
           </h2>
           <p className="text-xl text-gray-600">
-            Mari berkomunikasi dan berkolaborasi
+            Let's Communicate and Collaborate
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">
-              Mari Terhubung
+            <h3 className="text-2xl font-semibold text-gray-900 mb-8">
+              Let's Connect
             </h3>
             <div className="flex flex-col items-center space-y-6">
               <div className="flex items-center">
                 <Mail className="h-6 w-6 text-blue-600 mr-4" />
                 <div>
                   <p className="font-medium text-gray-900">Email</p>
-                  <p className="text-gray-600">john.doe@email.com</p>
+                  <p className="text-gray-600">muhtadinamri123@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <Phone className="h-6 w-6 text-blue-600 mr-4" />
                 <div>
-                  <p className="font-medium text-gray-900">Telepon</p>
-                  <p className="text-gray-600">+62 812-3456-7890</p>
+                  <p className="font-medium text-gray-900">Phone</p>
+                  <p className="text-gray-600">+62 895-1881-6016</p>
                 </div>
               </div>
               <div className="flex items-center">
                 <MapPin className="h-6 w-6 text-blue-600 mr-4" />
                 <div>
-                  <p className="font-medium text-gray-900">Lokasi</p>
-                  <p className="text-gray-600">Jakarta, Indonesia</p>
+                  <p className="font-medium text-gray-900">Location</p>
+                  <p className="text-gray-600">Surabaya, Indonesia</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-8">
-              <p className="text-gray-600 mb-4">Ikuti saya di:</p>
+              <p className="text-gray-600 mb-4">Follow me on</p>
               <div className="flex justify-center space-x-4">
                 <a
-                  href="#"
+                  href="https://www.github.com/ghulammf"
+                  target="_blank"
                   className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors"
                 >
                   <Github className="h-5 w-5" />
                 </a>
                 <a
-                  href="#"
+                  href="https://id.linkedin.com/in/ghulam-muhtadi-fiamrillah-370753320"
+                  target="_blank"
                   className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors"
                 >
                   <Linkedin className="h-5 w-5" />
                 </a>
-                <a
+                {/* <a
                   href="#"
+                  target="_blank"
                   className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors"
                 >
                   <Twitter className="h-5 w-5" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold text-gray-900 mb-6">
-              Kirim Pesan
+            <h3 className="text-xl font-semibold text-gray-900 mb-6">
+              Send message
             </h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 text-start">
               <div>
                 <label
                   htmlFor="name"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Nama
+                  Name
                 </label>
                 <input
                   type="text"
@@ -110,7 +105,7 @@ function Contact() {
                     setFormData({ ...formData, name: e.target.value })
                   }
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="Masukkan nama Anda"
+                  placeholder="Enter your name"
                   required
                 />
               </div>
@@ -129,7 +124,7 @@ function Contact() {
                     setFormData({ ...formData, email: e.target.value })
                   }
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="nama@email.com"
+                  placeholder="name@email.com"
                   required
                 />
               </div>
@@ -138,7 +133,7 @@ function Contact() {
                   htmlFor="message"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
-                  Pesan
+                  Message
                 </label>
                 <textarea
                   id="message"
@@ -148,18 +143,25 @@ function Contact() {
                     setFormData({ ...formData, message: e.target.value })
                   }
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                  placeholder="Tulis pesan Anda di sini..."
+                  placeholder="Enter your message here..."
                   required
                 ></textarea>
               </div>
-              <span
+              <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-700 transition-colors flex items-center justify-center cursor-pointer"
+                className="w-full bg-blue-600 text-slate-600 py-3 px-6 rounded-lg hover:bg-blue-700 font-medium transition-colors flex items-center justify-center cursor-pointer"
               >
                 <Send className="h-5 w-5 mr-2" />
-                Kirim Pesan
-              </span>
+                Send Message
+              </button>
             </form>
+            {/* <a
+              href="mailto:ghulammf04@gmail.com?subject=Halo&body=Ini adalah isi email"
+              className="flex justify-center"
+            >
+              <Send className="h-5 w-5 mr-2" />
+              kirim pesan
+            </a> */}
           </div>
         </div>
       </div>
