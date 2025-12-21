@@ -32,7 +32,7 @@ const skills = [
         title: "Tailwind CSS",
     },
     {
-        icon: "https://hexmos.com/freedevtools/svg_icons/zustand/zustand-original.svg",
+        icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpHj4UwTW4ANSlNjzQOiiOqfDa6kal9RpF0A&s",
         title: "Zustand",
     },
     {
